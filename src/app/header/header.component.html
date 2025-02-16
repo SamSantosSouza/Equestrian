@@ -1,0 +1,38 @@
+<mat-toolbar>
+    <img ngSrc="assets/logo.png" width="100" height="100" priority>
+    <p>EQUESTRIAN</p>
+
+<div>
+
+    <button mat-icon-button aria-label="search" class="icons">
+<mat-icon>search</mat-icon>
+</button>
+
+<button mat-icon-button aria-label="menu" class="icons" (click)="toggleMenu()">
+<mat-icon>menu</mat-icon>
+</button>
+
+
+</div>
+
+
+
+</mat-toolbar>
+
+<nav class="menu" [ngClass]="{'menu-aberto': menuAberto, 'menu-fechado': !menuAberto}">
+<ul>
+    <li class="item-menu">
+        <a onclick="">Home</a>
+    </li>
+    <li class="item-menu">
+        <a onclick="">História</a>
+    </li>
+    <li class="item-menu">
+        <a onclick="">Campeonatos e grandes atletas</a>
+    </li>
+    <li class="item-menu">
+        <a onclick="">Regulamentação e equipamentos</a>
+    </li>
+</ul>
+
+
