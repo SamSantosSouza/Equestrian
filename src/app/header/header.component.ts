@@ -6,6 +6,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -23,5 +24,21 @@ toggleMenu() {
   this.menuAberto = !this.menuAberto;
 }
 
+constructor(private router : Router) {}
 
+goToHome(){
+  this.router.navigate([""])
+}
+
+goToOrigins() {
+  this.router.navigate(['/origins']);
+}
+
+goToCamp() {
+  this.router.navigate(['/camp']);
+}
+
+goToRules(){
+  this.router.navigate(['/rules']);
+}
 }

@@ -22,16 +22,16 @@
 <nav class="menu" [ngClass]="{'menu-aberto': menuAberto, 'menu-fechado': !menuAberto}">
 <ul>
     <li class="item-menu">
-        <a onclick="">Home</a>
+        <a (click)="goToHome()">Home</a>
     </li>
     <li class="item-menu">
-        <a onclick="">História</a>
+        <a (click)="goToOrigins()">História</a>
     </li>
     <li class="item-menu">
-        <a onclick="">Campeonatos e grandes atletas</a>
+        <a (click)="goToCamp()">Campeonatos e grandes atletas</a>
     </li>
     <li class="item-menu">
-        <a onclick="">Regulamentação e equipamentos</a>
+        <a (click)="goToRules()">Regulamentação e equipamentos</a>
     </li>
 </ul>
 
