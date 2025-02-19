@@ -1,9 +1,30 @@
 .img {
-    max-width: 100%;
+    width: 100%;
+    height: auto; 
     object-fit: cover;
-    background-size: cover;
+    background-size: cover; 
 }
 
-main{
+main {
     padding-top: 30px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+@media (max-width: 768px) {
+
+    main {
+        padding-top: 20px;
+    }
+
+    .img {
+        max-height: 50vh; 
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .img {
+        max-height: 40vh; 
+    }
 }
