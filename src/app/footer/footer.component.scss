@@ -5,9 +5,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
     margin-top: auto;
     padding-bottom: 2.5rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 
 
    
@@ -28,7 +31,7 @@
     .local{ 
         display: flex;
         align-items: center;
-        padding-right: 5px;
+        padding-right: 5%;
     }
 
     p {
